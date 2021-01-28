@@ -1,0 +1,342 @@
+/*
+
+Template 2075 Digital Team
+
+http://www.tooplate.com/view/2075-digital-team
+
+*/
+
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+  }
+
+
+html, body {
+     width: 100%;
+     overflow-x: hidden;
+  }
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.relative{
+  position: relative;
+}
+
+@font-face {
+font-family: Rupee_Foradian;
+src: url(../fonts/Rupee_Foradian.ttf);
+}
+@font-face {
+font-family: Helvetica-Condensed;
+src: url(../fonts/Helvetica-Condensed.otf);
+}
+@font-face {
+font-family: Helvetica-Condensed-Bold;
+src: url(../fonts/Helvetica-Condensed-Bold.otf);
+}
+@font-face {
+font-family: Knockout HTF48-Featherweight Regular;
+src: url(../fonts/Knockout HTF48-Featherweight Regular.otf);
+}
+
+
+/*=======================
+      Header
+  =======================*/
+.header a{
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  z-index: 9;
+}
+
+#octagon {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+} 
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.85); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #a1a1a1;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+      position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 72px;
+}
+#octagon img{
+    padding: 10px;
+}
+
+.banner1 img {
+  z-index: 1;
+}
+
+.bannertext1{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bannertext{
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  margin: auto;
+}
+
+
+.overview h2{
+  color: #000;
+  font-size: 28px;
+  padding: 10px 5%;
+  padding-top: 5%;
+  text-transform: uppercase;
+  font-family: Helvetica-Condensed-Bold;
+}
+.overview p{
+  color: #000;
+  font-size: 14px;
+  padding: 10px 5%;
+  font-family: Rupee_Foradian;
+}
+.overview .row{
+  padding: 10px 10%;
+  padding-top: 5%;
+}
+.overview .row .overview-img{
+  height: 75px;
+}
+.overview h5{
+  color: #acacac;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  padding: 10px 10%;
+  text-transform: uppercase;
+  font-family: Knockout HTF48-Featherweight Regular;
+}
+
+.bannertext2{
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bannertext2 h2{
+  color: #ffffff;
+  font-size: 28px;
+  padding: 10px 5%;
+  padding-top: 2%;
+  text-transform: uppercase;
+  font-family: Helvetica-Condensed-Bold;
+}
+.bannertext2 p{
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 5%;
+  font-family: Rupee_Foradian;
+}
+.bannertext2 h5{
+  color: #ffffff;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 10px 5%;
+  font-family: Helvetica-Condensed-Bold;
+}
+.bannertext2 h5 img{
+  padding: 0 15px;
+}
+
+.banner3{
+  z-index: 2;
+}
+.bannertext3{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bannertext3 h2{
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px 5%;
+  padding-top: 2%;
+  text-transform: uppercase;
+  font-family: Helvetica-Condensed-Bold;
+}
+.bannertext3 p{
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 30%;
+  font-family: Rupee_Foradian;
+}
+.banner4{
+  margin-top: -40%;
+  z-index: 1;
+}
+.bannertext4{
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bannertext5{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot{
+  position: relative;
+  background-color: #000 !important;
+  background: rgba(0,0,0,1);
+}
+.foot-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.foot-content{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.foot-content h5{
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica-Condensed-Bold;
+  margin: 0;
+}
+.foot-content h3{
+  color: #eaf985;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Rupee_Foradian;
+  margin: 0;
+}
+.foot-content p{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: Rupee_Foradian;
+  padding: 10px;
+}
+.foot-content p:first-child{
+  text-align: left;
+}
+
+.vector1{
+  position: absolute;
+  top: 38%;
+  left: 0;
+}
+.vector2{
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.vector3{
+  position: absolute;
+  top: -8%;
+  left: 0;
+}
+.vector4{
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+.vector5{
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+/* ==========================================================================
+media quires for mobile
+========================================================================== */
+@media (max-width: 1400px) {
+  .text-img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 767px) {
+
+}
